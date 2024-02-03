@@ -1,0 +1,10 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1706927564
+Gun.glb::PackedScene::5519501215874335559::1706908795::1706927566::1::::<><>::uid://b5sp8a6yx5fqm::::res://Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png<>uid://d0ebbow7s4wkl::::res://Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png<>uid://df5psltxsx7p0::::res://Gun_PeaShooter_LP_DefaultMaterial_Normal.png
+Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png::CompressedTexture2D::4530214527508815328::1706908825::1706927565::1::::<><>::
+Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png::CompressedTexture2D::8922303926624775615::1706908827::1706927565::1::::<><>::
+Gun_PeaShooter_LP_DefaultMaterial_Normal.png::CompressedTexture2D::7573081109251189263::1706908823::1706927565::1::::<><>::
+Player.tscn::PackedScene::8879975936131058912::1706926847::0::1::::<><>::uid://ckvxm4xeq71ip::::res://Gun.glb<>res://Scripts/Player.gd
+Sample World.tscn::PackedScene::2967789265786068787::1706926331::0::1::::<><>::uid://dyrr52wyomdpw::::res://Player.tscn
+::res://Scripts/::1706926847
+Player.gd::GDScript::-1::1706926847::0::1::::<>CharacterBody3D<>::
