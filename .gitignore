@@ -9,3 +9,10 @@ export_presets.cfg
 # Mono-specific ignores
 .mono/
 data_*/
+.godot/editor
+.godot/editor/editor_layout.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/filesystem_update4
+.godot/editor/project_metadata.cfg
+.godot/editor/Sample World.tscn-editstate-0f5335f841880b252c28f70028a1c6d5.cfg
+.godot/editor/Sample World.tscn-folding-0f5335f841880b252c28f70028a1c6d5.cfg
