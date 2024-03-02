@@ -1,14 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyrr52wyomdpw"]
+[gd_scene load_steps=6 format=3 uid="uid://dyrr52wyomdpw"]
 
-[ext_resource type="PackedScene" uid="uid://ckvxm4xeq71ip" path="res://Gun.glb" id="1_lj01p"]
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="2_vip2m"]
+[ext_resource type="PackedScene" uid="uid://ckvxm4xeq71ip" path="res://entities/models/Gun.glb" id="1_avhq4"]
+[ext_resource type="Script" path="res://entities/scripts/Player.gd" id="2_i4no1"]
+[ext_resource type="PackedScene" uid="uid://b4wbl4gmtrfaa" path="res://systems/interaction/PlayerInteractor.tscn" id="3_ovaap"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x7hpy"]
 size = Vector3(1.16063, 1.76062, 0.737793)
 
-[node name="Gun" instance=ExtResource("1_lj01p")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_04q40"]
+size = Vector3(1, 1, 2.10706)
+
+[node name="Gun" instance=ExtResource("1_avhq4")]
 disable_mode = 1
-script = ExtResource("2_vip2m")
+script = ExtResource("2_i4no1")
 
 [node name="Inaly" parent="." index="0"]
 transform = Transform3D(-0.0024086, 0, -0.999997, 0, 1, 0, 0.999997, 0, -0.0024086, 0, 0.840032, 0.232556)
@@ -98,3 +102,15 @@ shape = SubResource("BoxShape3D_x7hpy")
 [node name="Camera" type="Camera3D" parent="." index="28"]
 transform = Transform3D(1, -8.86205e-09, -1.20899e-08, 1.49012e-08, 0.5, 0.866025, -1.62981e-09, -0.866025, 0.5, 0, 25, 10)
 current = true
+
+[node name="PlayerInteractor" parent="." index="29" node_paths=PackedStringArray("player") instance=ExtResource("3_ovaap")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 1.17863, 0.0687095)
+collision_layer = 0
+collision_mask = 2
+player = NodePath("..")
+
+[node name="CollisionShape3D" parent="PlayerInteractor" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.843811)
+shape = SubResource("BoxShape3D_04q40")
+
+[editable path="PlayerInteractor"]

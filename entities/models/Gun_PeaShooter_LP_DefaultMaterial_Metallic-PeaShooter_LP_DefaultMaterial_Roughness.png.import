@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0ebbow7s4wkl"
-path.s3tc="res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png-45678bdc17beb6b4ccc49459942c3cf1.s3tc.ctex"
+uid="uid://1o7uw43nw4u4"
+path.s3tc="res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png-50a8b5550d6b113595ddeb311bcb0c52.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png"
-dest_files=["res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png-45678bdc17beb6b4ccc49459942c3cf1.s3tc.ctex"]
+source_file="res://entities/models/Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png"
+dest_files=["res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Metallic-PeaShooter_LP_DefaultMaterial_Roughness.png-50a8b5550d6b113595ddeb311bcb0c52.s3tc.ctex"]
 
 [params]
 

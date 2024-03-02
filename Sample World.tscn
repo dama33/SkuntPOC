@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bijvb5jvbycdv"]
+[gd_scene load_steps=6 format=3 uid="uid://bijvb5jvbycdv"]
 
-[ext_resource type="PackedScene" uid="uid://dyrr52wyomdpw" path="res://Player.tscn" id="1_vqsxg"]
+[ext_resource type="PackedScene" uid="uid://dyrr52wyomdpw" path="res://entities/scripts/Player.tscn" id="1_vqsxg"]
+[ext_resource type="PackedScene" uid="uid://w8wuwprny2ju" path="res://entities/scripts/NPC.tscn" id="2_w8j0i"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_faa73"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -29,7 +30,6 @@ use_collision = true
 size = Vector3(50, 1, 50)
 
 [node name="Player" parent="." instance=ExtResource("1_vqsxg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 5.95976)
 
-[node name="LevelCamera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 25, 10)
+[node name="NPC" parent="." instance=ExtResource("2_w8j0i")]

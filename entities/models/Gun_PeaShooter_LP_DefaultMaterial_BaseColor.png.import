@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5sp8a6yx5fqm"
-path.s3tc="res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png-520c3955e0dde402a294ac8b3deab7b3.s3tc.ctex"
+uid="uid://dbakvrrpuelo7"
+path.s3tc="res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png-fdc7475d7065344b09e8a8300d764f71.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png"
-dest_files=["res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png-520c3955e0dde402a294ac8b3deab7b3.s3tc.ctex"]
+source_file="res://entities/models/Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png"
+dest_files=["res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_BaseColor.png-fdc7475d7065344b09e8a8300d764f71.s3tc.ctex"]
 
 [params]
 

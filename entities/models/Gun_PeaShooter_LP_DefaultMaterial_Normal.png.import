@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df5psltxsx7p0"
-path.s3tc="res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Normal.png-0cddbd8b93b40c73a35f5b1d8e7941ca.s3tc.ctex"
+uid="uid://qkfvmsg2ppg"
+path.s3tc="res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Normal.png-416ded680701677cf611ce4da8824372.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Gun_PeaShooter_LP_DefaultMaterial_Normal.png"
-dest_files=["res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Normal.png-0cddbd8b93b40c73a35f5b1d8e7941ca.s3tc.ctex"]
+source_file="res://entities/models/Gun_PeaShooter_LP_DefaultMaterial_Normal.png"
+dest_files=["res://.godot/imported/Gun_PeaShooter_LP_DefaultMaterial_Normal.png-416ded680701677cf611ce4da8824372.s3tc.ctex"]
 
 [params]
 
@@ -26,7 +26,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://Gun_PeaShooter_LP_DefaultMaterial_Normal.png"
+roughness/src_normal="res://entities/models/Gun_PeaShooter_LP_DefaultMaterial_Normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

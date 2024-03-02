@@ -8,7 +8,6 @@ const JUMP_VELOCITY = 4.5
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var ray_origin = Vector3()
 var ray_target = Vector3()
-@export var level_camera: Camera3D
 
 @onready var camera:= $Camera
 
@@ -36,7 +35,6 @@ func _physics_process(delta):
 		var pos = intersection.get("position")
 		var view_angle = Vector3(pos.x, position.y, pos.z)
 		look_at(view_angle)
-		print(view_angle)
 		camera.look_at_from_position(Vector3(position.x, position.y+25, position.z+10), position, Vector3.UP)
 		
 		
