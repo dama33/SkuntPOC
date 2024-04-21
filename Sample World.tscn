@@ -60,5 +60,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9598, 0.362044, -13.0117)
 
 [node name="Gun" parent="." instance=ExtResource("1_vqsxg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.1565)
-
-[connection signal="area_entered" from="SpawnLocation" to="." method="_on_spawn_location_area_entered"]
