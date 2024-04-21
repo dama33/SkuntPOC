@@ -16,6 +16,7 @@ func _on_interactable_focused(_interactor):
 
 
 func _on_interactable_interacted(_interactor):
+	Global.player.change_states(Global.player.STATES.TALKING)
 	play_door_open()
 
 func _on_interactable_unfocused(_interactor):
@@ -35,6 +36,7 @@ func _on_animation_player_animation_finished(anim_name):
 		var arrayAfterRemove = root.get_children()
 		var parentHopefullyInsideHouse = Global.player.get_parent()
 		Global.player.position = inside_house.find_child("SpawnLocation").global_position
+		Global.player.change_states(Global.player.STATES.WALKING)
 
 func get_animation_player():
 	return animationPlayer
