@@ -25,3 +25,5 @@ func _on_area_exited(area: Interactable):
 	if cached_closest == area:
 		unfocus(area)
 
+func get_controller():
+	return controller

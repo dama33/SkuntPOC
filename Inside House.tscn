@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://drfl683qgweuj"]
+
+[ext_resource type="Script" path="res://entities/scripts/Inside House.gd" id="1_86uvw"]
+[ext_resource type="PackedScene" uid="uid://b4px6iojpgrem" path="res://systems/interaction/Interactable.tscn" id="1_s4lc2"]
+[ext_resource type="PackedScene" uid="uid://ccheg5qkm4dul" path="res://systems/player/Spawn Location.tscn" id="3_tdouh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mg3j4"]
+albedo_color = Color(1, 0, 0.0823529, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k3vek"]
+material = SubResource("StandardMaterial3D_mg3j4")
+
+[node name="InsideHouse" type="Node3D"]
+script = ExtResource("1_86uvw")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(20, 0.5, 20)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.74959, 0.75972, 6.5509)
+mesh = SubResource("BoxMesh_k3vek")
+
+[node name="Interactable" parent="." instance=ExtResource("1_s4lc2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.99482, 0, 6.69176)
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.725711, 0.756707, -0.136312)
+
+[node name="SpawnLocation" parent="." instance=ExtResource("3_tdouh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.87757, 0, -1.65004)
+
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]
+
+[editable path="Interactable"]

@@ -28,20 +28,22 @@ func choose(array):
 	return array.front()	
 	
 func change_states(new_state):
-	pass
+	current_state = new_state
 	
 func change_direction():
-	if direction == Vector3.BACK:
-		direction = Vector3.FORWARD
-	else:
-		direction = Vector3.BACK
+	direction = -direction
 
 
 func _on_interactable_unfocused(interactor):
-	print("UNFOCUSED")
+	pass
 
 func _on_interactable_interacted(interactor):
-	print("INTERACTED")
+	look_at(Global.player.position)
+	change_states(STATES.TALKING)
+	Global.player.change_states(Global.player.STATES.TALKING)
+	await get_tree().create_timer(3).timeout
+	change_states(STATES.WALKING)
+	Global.player.change_states(Global.player.STATES.WALKING)
 
 func _on_interactable_focused(interactor):
-	print("FOCUSED")
+	pass

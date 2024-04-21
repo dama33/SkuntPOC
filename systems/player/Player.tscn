@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dyrr52wyomdpw"]
 
 [ext_resource type="PackedScene" uid="uid://ckvxm4xeq71ip" path="res://entities/models/Gun.glb" id="1_avhq4"]
-[ext_resource type="Script" path="res://entities/scripts/Player.gd" id="2_i4no1"]
+[ext_resource type="Script" path="res://systems/player/Player.gd" id="2_i4no1"]
 [ext_resource type="PackedScene" uid="uid://b4wbl4gmtrfaa" path="res://systems/interaction/PlayerInteractor.tscn" id="3_ovaap"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x7hpy"]
